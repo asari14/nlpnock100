@@ -5,3 +5,8 @@
 [Ref]
 https://nlp100.github.io/ja/ch01.html
 """
+
+str1 = "パトカー"
+str2 = "タクシー"
+
+print("".join(list(map(lambda idx: str1[idx] + str2[idx], [0, 1, 2, 3]))))

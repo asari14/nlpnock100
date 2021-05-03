@@ -5,3 +5,7 @@
 [Ref]
 https://nlp100.github.io/ja/ch01.html
 """
+
+string = "stressed"
+
+print(string[::-1])
