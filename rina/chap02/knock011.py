@@ -8,3 +8,9 @@ https://nlp100.github.io/ja/ch02.html
 
 [Unix]
 """
+
+with open("inputs/popular-names.txt", encoding="utf-8") as file:
+    Lines = file.readlines()
+
+    for line in Lines:
+        print(" ".join(line.rstrip().split('	')))

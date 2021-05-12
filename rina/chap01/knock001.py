@@ -5,3 +5,5 @@
 [Ref]
 https://nlp100.github.io/ja/ch01.html
 """
+
+print("パタトクカシーー"[::2])
