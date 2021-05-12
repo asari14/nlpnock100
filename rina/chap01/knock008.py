@@ -9,3 +9,19 @@
 [Ref]
 https://nlp100.github.io/ja/ch01.html
 """
+
+
+def cipher(Str):
+    Ciphered = []
+
+    for i in range(len(Str)):
+        if Str[i].isalpha() and Str[i].islower():
+            Ciphered.append(chr(219-ord(Str[i])))
+        else:
+            Ciphered.append(Str[i])
+
+    return "".join(Ciphered)
+
+
+print(cipher("Hello, World!"))
+# Hvool, Wliow!

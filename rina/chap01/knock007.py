@@ -6,3 +6,10 @@
 [Ref]
 https://nlp100.github.io/ja/ch01.html
 """
+
+
+def getTemplate(x, y, z):
+    return f'{x}時の{y}は{z}'
+
+
+print(getTemplate(12, '気温', 22.4))

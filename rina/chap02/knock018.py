@@ -8,3 +8,17 @@ https://nlp100.github.io/ja/ch02.html
 
 [Unix]
 """
+from operator import itemgetter, attrgetter
+
+
+Lines = []
+with open("inputs/popular-names.txt", encoding="utf-8") as file:
+    for line in file:
+        Lines.append(tuple(line.rstrip().split("	")))
+
+
+for line in sorted(Lines, key=itemgetter(2), reverse=False):
+    print(list(line))
+
+
+#  三つ目のタプル数値にできてない
