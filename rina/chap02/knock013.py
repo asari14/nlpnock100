@@ -10,7 +10,6 @@ https://nlp100.github.io/ja/ch02.html
 [Unix]
 """
 
-
 col1s = []
 col2s = []
 
